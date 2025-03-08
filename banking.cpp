@@ -2,6 +2,7 @@
 #include <vector>
 using namespace std;
 
+
 class BankAccount {
 private:
     int accountNumber;
@@ -59,7 +60,9 @@ int main() {
         cin >> choice;
 
         switch (choice) {
+
         case 1:
+
             cout << "Enter Account Number: ";
             cin >> accNum;
             cout << "Enter Account Holder Name: ";
@@ -68,7 +71,9 @@ int main() {
             accounts.push_back(BankAccount(accNum, name, 0.0));
             cout << "Account created successfully!" << endl;
             break;
+
         case 2:
+
             cout << "Enter Account Number: ";
             cin >> accNum;
             cout << "Enter Deposit Amount: ";
@@ -80,7 +85,9 @@ int main() {
                 }
             }
             break;
+
         case 3:
+
             cout << "Enter Account Number: ";
             cin >> accNum;
             cout << "Enter Withdrawal Amount: ";
@@ -92,7 +99,9 @@ int main() {
                 }
             }
             break;
+
         case 4:
+
             cout << "Enter Account Number: ";
             cin >> accNum;
             for (auto &acc : accounts) {
@@ -102,7 +111,9 @@ int main() {
                 }
             }
             break;
+
         case 5:
+        
             cout << "Exiting program. Thank you!" << endl;
             return 0;
         default:
