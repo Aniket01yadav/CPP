@@ -9,7 +9,7 @@ vector<string> moves = {"R", "R'", "L", "L'", "U", "U'", "D", "D'", "F", "F'", "
 
 // A simplified representation of a 2x2 cube state
 struct Cube {
-    vector<int> state; // Represents colors on each face
+    vector<int> state;
 
     Cube() {
         state = {0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5};
@@ -82,8 +82,7 @@ void solveCube(Cube &cube) {
             solution.push_back(move);
             break;
         }
-        cube.applyMove(move + "'"); // Undo move if not solved
-    }
+        cube.applyMove(move + "'");
     cout << "Solution: ";
     for (string m : solution) cout << m << " ";
     cout << endl;
