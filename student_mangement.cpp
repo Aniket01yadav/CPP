@@ -125,7 +125,7 @@ int main() {
         cout << "4. Update Student Info\n";
         cout << "5. Delete Student\n";
         cout << "6. Exit\n";
-        cout << "Enter your choice: ";
+        cout << "Enter your choice(1 to 6): ";
         cin >> choice;
 
         switch (choice) {
