@@ -19,7 +19,7 @@ private:
 public:
     FinanceManager() : balance(0.0) {}
 
-    // Add transaction
+    // Add transactions
     void addTransaction(const string &type, const string &description, double amount) {
         Transaction t = {type, description, amount};
         transactions.push_back(t);
@@ -40,7 +40,7 @@ public:
         cout << "\nCurrent Balance: $" << fixed << setprecision(2) << balance << "\n";
     }
 
-    // Save to file
+    // Save to file 
     void saveToFile(const string &filename) const {
         ofstream outFile(filename);
         if (outFile.is_open()) {
@@ -55,7 +55,7 @@ public:
         }
     }
 
-    // Load from file
+    // Load from file here
     void loadFromFile(const string &filename) {
         ifstream inFile(filename);
         if (inFile.is_open()) {
