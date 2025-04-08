@@ -13,9 +13,11 @@ int binarySearch(int arr[], int size, int target) {
         }
 
         if (arr[mid] < target) {
-            left = mid + 1;  // Search in the right half
+            // Search in the right half
+            left = mid + 1; 
         } else {
-            right = mid - 1;  // Search in the left half
+            // Search in the left half
+            right = mid - 1;  
         }
     }
 
@@ -40,3 +42,5 @@ int main() {
 
     return 0;
 }
+
+
